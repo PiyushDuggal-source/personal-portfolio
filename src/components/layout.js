@@ -3,11 +3,23 @@ import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 import { Head, Loader, Nav, Social, Email, Footer } from '@components';
 import { GlobalStyle, theme } from '@styles';
+import InteractiveBackground from '@components/sections/interactiveBackground';
 
 const StyledContent = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: relative;
+  z-index: 1;
+`;
+
+const BackgroundWrapper = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 `;
 
 const Layout = ({ children, location }) => {
@@ -53,6 +65,9 @@ const Layout = ({ children, location }) => {
       <div id="root">
         <ThemeProvider theme={theme}>
           <GlobalStyle />
+          <BackgroundWrapper>
+            <InteractiveBackground />
+          </BackgroundWrapper>
 
           <a className="skip-to-content" href="#content">
             Skip to Content
