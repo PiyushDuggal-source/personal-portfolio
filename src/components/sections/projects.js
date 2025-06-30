@@ -211,6 +211,8 @@ const Projects = () => {
   const firstSix = projects.slice(0, GRID_LIMIT);
   const projectsToShow = showMore ? projects : firstSix;
 
+  const showMoreVisible = projects.length > 6;
+
   const projectInner = node => {
     const { frontmatter, html } = node;
     const { github, external, title, tech } = frontmatter;
@@ -302,9 +304,11 @@ const Projects = () => {
         )}
       </ul>
 
-      <button className="more-button" onClick={() => setShowMore(!showMore)}>
-        Show {showMore ? 'Less' : 'More'}
-      </button>
+      {showMoreVisible && (
+        <button className="more-button" onClick={() => setShowMore(!showMore)}>
+          Show {showMore ? 'Less' : 'More'}
+        </button>
+      )}
     </StyledProjectsSection>
   );
 };
