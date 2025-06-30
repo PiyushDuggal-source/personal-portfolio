@@ -5,7 +5,7 @@ module.exports = {
     title: 'Piyush Duggal',
     description:
       'Piyush Duggal is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
-    siteUrl: 'https://piyushduggal.com', // No trailing slash allowed!
+    siteUrl: 'https://piyushduggal.me', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@duggal_piyush',
   },
@@ -25,7 +25,7 @@ module.exports = {
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
         display: 'minimal-ui',
-        icon: 'src/images/logo.png',
+        icon: 'src/images/p.svg',
       },
     },
     `gatsby-plugin-offline`,
