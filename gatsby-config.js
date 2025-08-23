@@ -148,10 +148,21 @@ module.exports = {
         ],
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: 'UA-45666519-2',
+    //   },
+    // },
+
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-tagmanager`,
       options: {
-        trackingId: 'UA-45666519-2',
+        id: 'GTM-NHXVQGMV',
+        includeInDevelopment: false,
+        defaultDataLayer: { platform: 'gatsby' },
+        // enableWebVitalsTracking: true,
+        // routeChangeEventName: 'gatsby-route-change',
       },
     },
   ],
