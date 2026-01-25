@@ -38,6 +38,10 @@ module.exports = {
       url: '/#ai-projects',
     },
     {
+      name: 'Mobile Projects',
+      url: '/#mobile-projects',
+    },
+    {
       name: 'Web Projects',
       url: '/#web-projects',
     },

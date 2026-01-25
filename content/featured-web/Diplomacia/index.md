@@ -1,5 +1,5 @@
 ---
-date: '1'
+date: '4'
 title: 'Diplomacia - IIT MADRAS BS Society Website'
 cover: './diplomacia.png'
 # github: 'https://github.com/PiyushDuggal-source/iitm-wa-bot'
