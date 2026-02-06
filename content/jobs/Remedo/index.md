@@ -7,4 +7,4 @@ range: 'November 2025 - Present'
 url: 'https://remedo.io'
 ---
 
-- Working on health tech platform development built with React and Next.js.
+- Working on health tech platform development, built with React and Next.js.
